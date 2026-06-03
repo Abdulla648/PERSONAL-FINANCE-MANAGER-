@@ -1,29 +1,26 @@
 # PERSONAL-FINANCE-MANAGER-
-## Project Overview
+PERSONAL FINANCE MANAGER
 
-The Personal Finance Manager is a web-based application designed to help users manage their personal finances efficiently.
+Project Overview
 
-## Problem Statement
+The Personal Finance Manager is a web-based application designed to help users manage their personal finances efficiently. The system allows users to record income and expenses, track financial activities, monitor spending patterns, and maintain financial records in a structured manner. It provides a simple and user-friendly platform for better financial management.
 
-Many individuals manage their finances manually, which can lead to difficulty in tracking expenses, poor budgeting, and lack of financial insights.
+Problem Statement
 
-## Project Objectives
+Many people manage their finances manually using notebooks or spreadsheets. This can lead to difficulties in tracking expenses, poor budget management, inaccurate financial records, and lack of financial insights. A digital solution is needed to simplify financial management and improve financial planning.
 
-1. To track income and expenses efficiently.
-2. To manage personal budgets effectively.
-3. To generate financial reports.
-4. To improve financial planning.
-5. To help users make better financial decisions.
+Technologies Used
 
-## Technologies Used
+Frontend
 
-### Frontend
 - HTML
 - CSS
 - JavaScript
 
-### Backend
+Backend
+
 - PHP
 
-### Database
+Database
+
 - MySQL
