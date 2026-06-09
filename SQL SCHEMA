@@ -1,0 +1,64 @@
+CREATE DATABASE personal_finance_manager;
+USE personal_finance_manager;
+
+-- Users Table
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Categories Table
+CREATE TABLE categories (
+    category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(100) NOT NULL,
+    category_type ENUM('Income','Expense') NOT NULL
+);
+
+-- Income Table
+CREATE TABLE income (
+    income_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    source VARCHAR(100) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    income_date DATE NOT NULL,
+    description TEXT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+-- Expenses Table
+CREATE TABLE expenses (
+    expense_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    category_id INT NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    expense_date DATE NOT NULL,
+    description TEXT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+-- Budget Table
+CREATE TABLE budgets (
+    budget_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    category_id INT NOT NULL,
+    budget_amount DECIMAL(10,2) NOT NULL,
+    month VARCHAR(20) NOT NULL,
+    year INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+-- Savings Goals Table
+CREATE TABLE savings_goals (
+    goal_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    goal_name VARCHAR(100) NOT NULL,
+    target_amount DECIMAL(10,2) NOT NULL,
+    current_amount DECIMAL(10,2) DEFAULT 0,
+    deadline DATE,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
