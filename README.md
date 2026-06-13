@@ -1,108 +1,76 @@
-PERSONAL FINANCE MANAGER
-# Personal Finance Manager
+# Digital Farm Management Portal
 
-## Project Overview
+## Project Title
+Development of a Digital Farm Management Portal for Implementing Biosecurity Measures in Pig and Poultry Farms
 
-The Personal Finance Manager helps users manage their personal income, expenses, budgets, and savings goals in a simple and organized way. The system allows users to record financial transactions, monitor spending habits, track savings progress, and generate financial reports. It provides a centralized platform for better financial planning and decision-making.
-
----
-
-## Problem Statement
-
-Many people manage their finances manually using notebooks or spreadsheets. This often leads to inaccurate records, overspending, poor budget planning, and difficulty in tracking savings. A digital solution is needed to organize financial information and provide better financial insights.
-
----
+## Project Description
+This project is a web-based application designed to help pig and poultry farm owners implement and monitor biosecurity measures effectively. The system provides a centralized platform for managing farm activities, maintaining hygiene records, tracking visitors, monitoring animal health, and generating reports to reduce the risk of disease outbreaks.
 
 ## Objectives
+- Improve farm biosecurity management.
+- Maintain digital records of farm activities.
+- Monitor animal health and vaccination schedules.
+- Track visitor entry and exit details.
+- Generate reports for better decision-making.
 
-- To help users track income and expenses efficiently.
-- To manage personal budgets effectively.
-- To monitor savings goals and progress.
-- To generate financial reports and summaries.
-- To improve financial planning and decision-making.
-- To maintain financial records digitally.
+## Features
+- User Registration and Login
+- Dashboard for Farm Overview
+- Animal Health Monitoring
+- Vaccination Schedule Management
+- Visitor Management System
+- Biosecurity Checklist Tracking
+- Farm Activity Records
+- Report Generation
+- Secure Data Management
 
----
-
-## Users
-
-### 1. User
-
-- Register and log in.
-- Add income records.
-- Add expense records.
-- Manage budgets.
-- Set savings goals.
-- View reports and summaries.
-
----
-
-## Modules
-
-### 1. Login Module
-
-- User authentication.
-- Secure login and registration.
-
-### 2. Income Management Module
-
-- Add income details.
-- Update income records.
-- Delete income records.
-
-### 3. Expense Management Module
-
-- Add expenses.
-- Update expense details.
-- Delete expenses.
-
-### 4. Budget Management Module
-
-- Create monthly budgets.
-- Track budget usage.
-- Manage budget limits.
-
-### 5. Savings Goal Module
-
-- Create savings goals.
-- Track savings progress.
-- Monitor goal completion.
-
-### 6. Dashboard Module
-
-- View income summary.
-- View expense summary.
-- Monitor budget status.
-- View savings overview.
-
-### 7. Report Module
-
-- Generate financial reports.
-- Analyze spending patterns.
-- View monthly summaries.
-
----
-
-## Technology Stack
+## Technologies Used
 
 ### Frontend
-
+- React.js
 - HTML
 - CSS
-- Bootstrap
 - JavaScript
+- Bootstrap / Tailwind CSS
 
 ### Backend
-
-- Spring Boot
-- Java
+- Node.js
+- Express.js
 
 ### Database
-
 - MySQL
 
-### Development Tools
-
-- VS Code
+### Tools
+- Git
 - GitHub
 - Postman
+- VS Code
+
+## Project Modules
+1. Authentication Module
+2. Farm Management Module
+3. Animal Health Management Module
+4. Vaccination Management Module
+5. Visitor Tracking Module
+6. Biosecurity Monitoring Module
+7. Report Generation Module
+
+## Benefits
+- Reduces disease risks in farms.
+- Improves record management.
+- Saves time through digital monitoring.
+- Enhances farm productivity.
+- Supports better biosecurity compliance.
+
+## Future Enhancements
+- Mobile Application Support
+- IoT Sensor Integration
+- Real-Time Notifications
+- AI-Based Disease Prediction
+- Cloud Data Storage
+
+## Author
+Abdul
+
+## License
+This project is developed for educational and academic purposes.
